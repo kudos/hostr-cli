@@ -1,0 +1,39 @@
+{
+  "name": "hostr-cli",
+  "version": "0.0.0",
+  "description": "Command-line client for hostr.co",
+  "bin": {
+    "hostr": "./build/hostr.js"
+  },
+  "main": "./build/hostr.js",
+  "files": [
+    "build/hostr.js"
+  ],
+  "scripts": {
+    "prepublish": "babel -o ./build/hostr.js hostr.js",
+    "build": "babel -o ./build/hostr.js hostr.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kudos/hostr-cli"
+  },
+  "keywords": [
+    "Hostr"
+  ],
+  "author": "Jonathan Cremin <jonathan@hostr.co>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kudos/hostr-cli/issues"
+  },
+  "homepage": "https://github.com/kudos/hostr-cli",
+  "dependencies": {
+    "configstore": "^1.2.1",
+    "superagent": "^1.3.0"
+  },
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "eslint": "^1.3.1",
+    "eslint-config-airbnb": "0.0.8",
+    "tape": "^4.2.0"
+  }
+}
